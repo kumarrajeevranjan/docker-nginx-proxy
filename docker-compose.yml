@@ -1,0 +1,17 @@
+version: "3"
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    environment:
+      HSTS: 'off'
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs/self-signed:/etc/nginx/certs:ro
+networks:
+  default:
+    external:
+      name: nginx-proxy
