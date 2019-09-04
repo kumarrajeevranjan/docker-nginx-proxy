@@ -11,6 +11,8 @@ services:
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - ./certs/self-signed:/etc/nginx/certs:ro
+      - ./nginx/nginx-proxy.conf:/etc/nginx/conf.d/proxy.conf:ro
+      - ./conf/nginx-proxy-wordpress.conf:/etc/nginx/vhost.d/location:ro
 networks:
   default:
     external:
