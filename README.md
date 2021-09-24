@@ -1,7 +1,7 @@
 # WordPress VIP Go development for Docker
 
 This repo provides a Docker-based network proxy for WordPress VIP Go
-development. It is required to run WordPress VIP Go projects with [Docker for Wordpress VIP Go](https://github.com/szymonmichalik/docker-wpcomvip).
+development. It is required to run WordPress VIP Go projects with [Docker for Wordpress VIP Go](https://github.com/kumarrajeevranjan/docker-wpcomvip).
 
 ## Set up
 
@@ -26,7 +26,7 @@ development. It is required to run WordPress VIP Go projects with [Docker for Wo
 
 6. Run `docker-compose up -d`.
 
-6. Use ([Docker for Wordpress VIP Go](https://github.com/szymonmichalik/docker-wpcomvip) to setup VIP Go projects.
+6. Use ([Docker for Wordpress VIP Go](https://github.com/kumarrajeevranjan/docker-wpcomvip) to setup VIP Go projects.
 
 ## HTTPS support
 
